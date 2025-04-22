@@ -18,6 +18,14 @@ git clone https://github.com/sihao-li/Agent-Based-LLM/
 cd your-repo
 ```
 
+If you're using Llama-3.2-7B-Instruct, don't forget to retrieve your token from Huggingface :
+```bash
+!pip install huggingface_hub
+from huggingface_hub import login
+access_token_write = "YOUR_HUGGINGFACE_TOKEN"  # Replace with your Hugging Face token
+login(token = access_token_write)
+```
+
 ## Citation
 
 Li, S. H., & Carnapete, O. (2024). Enriching agent-based modeling’s with LLM-driven MBTI personalities: A benchmark framework. Université Paris Dauphine.
